@@ -1,0 +1,246 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    max-width: inherit;
+    font-family: Arial;
+}
+
+.FlexBoxMain{
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+.nav-barFlexBoxContainer {
+    /* Header main flex */
+    /*background-color: yellow;*/
+    width: 80%;
+    height: 15%;
+    display: flex;
+}
+
+.nav-barLeft {
+    /* Left side of the nav-bar */
+    /*background-color: blue;*/
+    height: 100%;
+    width: 50%;
+    /* to controll all elements inside*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+}
+
+#nav-barLogo {
+    color: black;
+    font-family: Impact;
+    font-size: 28px;
+}
+
+.nav-barRight {
+    /* Right side of the nav-bar */
+    /*background-color: yellow;*/
+    height: 100%;
+    width: 50%;
+    /* to controll all elements inside*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    /* Set the element at the end of the flex */
+
+}
+
+.nav-barRight img {
+    height: 35%;
+    border-radius: 5em;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.nav-barLeft,
+.nav-barRight{
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: lightgray;
+}
+
+
+.mainFlexBoxContainer {
+    /* Main content flex */
+    /*background-color: green;*/
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+.galerySectionFlexBox {
+    /*background-color: aqua;*/
+    width: 50%;
+    height: 100%;
+    /* To center .galeryFlexBox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeryFlexBox {
+    width: 80%;
+    /*background-color: black;*/
+    /* To center .mainImg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainImg{
+    /*background-color: brown;*/
+    width: 80%;
+}
+
+.mainImg img{
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+.images{
+    /*background-color: blue;*/
+    width: 80%;
+    /* To center images */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+}
+
+.mainImg img,
+.images img{
+    box-shadow: 1px 1px 4px gray;
+}
+
+.activeImg img{
+    opacity: 50%;
+}
+
+.activeImg{
+    border: solid;
+    border-color: #e88436;
+    border-radius: 0.5em;
+}
+
+.detailsSectionFlexBox {
+    /*background-color: blueviolet;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsFlexBox{
+    /*background-color: red;*/
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title h5{
+    color: #e88436;
+}
+
+.title h1{
+    font-size: 36px;
+    margin: 0;
+}
+
+.description{
+    color: gray;
+}
+
+.priceDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actualPrice{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.total{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.discound{
+    background-color: lightgray;
+    color: #e88436;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 0.2em;
+    font-weight: bolder;
+}
+
+.price{
+    text-decoration:line-through;
+    color: grey;
+}
+
+.addItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    border-radius: 0.5em;
+    gap: 36px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.operator{
+    color: #e88436;
+}
+
+.btn{
+    background-color: #e88436;
+    border: none;
+    height: 100%;
+    border-radius: 0.5em;
+    color: white;
+    width: 100%;
+}
